@@ -36,4 +36,5 @@ CREATE TABLE "JPCgenTracker" (
   "ddom_name" varchar,
   "campaign_name" varchar
 );
+test
 
