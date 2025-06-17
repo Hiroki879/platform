@@ -27,8 +27,8 @@ CREATE TABLE "FunnelIO_platform_Managed" (
 );
 
 CREATE TABLE "JPCgenTracker" (
-  "program_id" integer,
-  "activity_Id" integer,
+  "program_id" varchar(100),
+  "activity_Id" varchar(100)
   "activity_name" varchar,
   "segment_name" varchar,
   "product_name" varchar,
@@ -36,5 +36,4 @@ CREATE TABLE "JPCgenTracker" (
   "ddom_name" varchar,
   "campaign_name" varchar
 );
-test
 
