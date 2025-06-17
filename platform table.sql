@@ -27,13 +27,13 @@ CREATE TABLE "FunnelIO_platform_Managed" (
 );
 
 CREATE TABLE "JPCgenTracker" (
-  "program_id" varchar(100),
-  "activity_Id" varchar(100)
-  "activity_name" varchar,
-  "segment_name" varchar,
-  "product_name" varchar,
-  "platform_name" varchar,
-  "ddom_name" varchar,
-  "campaign_name" varchar
+  "program_id" varchar(100) REFERENCES master."Funding"("program_id"),
+  "activity_Id" varchar(100) REFERENCES master."CGENActivity"("activity_Id"),
+  "activity_name" varchar(255),
+  "segment_name" varchar(255),
+  "product_name" varchar(255),
+  "platform_name" varchar(255),
+  "ddom_name" varchar(255),
+  "campaign_name" varchar(255)
 );
 
